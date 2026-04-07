@@ -400,7 +400,16 @@
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
 <script>
 
-// Firebase ya inicializado arriba
+firebase.initializeApp({
+  apiKey: "AIzaSyBd0Vuukdf2UlpzfztvgtF817UrVlsxbcU",
+  authDomain: "memoon-f804a.firebaseapp.com",
+  databaseURL: "https://memoon-f804a-default-rtdb.firebaseio.com",
+  projectId: "memoon-f804a",
+  storageBucket: "memoon-f804a.firebasestorage.app",
+  messagingSenderId: "890292414809",
+  appId: "1:890292414809:web:8355ea8c503bcd2b4cc448"
+});
+const db = firebase.database();
 
 // Firebase helpers
 const dbRef = path => db.ref(path);
